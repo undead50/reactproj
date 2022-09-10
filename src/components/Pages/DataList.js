@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 const DataList = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -6,6 +6,10 @@ const DataList = ({ items }) => {
   const onTitleClick = (index) => {
     setActiveIndex(index);
   };
+
+   useEffect ( () =>{
+    console.log("User Effect In action.")},[activeIndex])
+  
 
   const renderedItems = items.map((item, index) => {
     return (
