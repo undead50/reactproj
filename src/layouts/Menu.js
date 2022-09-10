@@ -59,6 +59,12 @@ export default class Menu extends Component {
                 <p>Inactive Page</p>
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/data" className="nav-link">
+                <i className="far fa-circle nav-icon" />
+                <p>Data List</p>
+              </Link>
+            </li>
           </ul>
         </li>
         <li className="nav-item">

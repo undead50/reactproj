@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Dataindex from '../components/Pages/Dataindex'
 import Master from '../components/Pages/Master'
 import Form from '../components/Pages/Form'
+import Data from '../components/Pages/Data'
 import { Link,Route } from "react-router-dom";
 
 export default class Dashboard extends Component {
@@ -31,6 +32,7 @@ export default class Dashboard extends Component {
                 <Route path="/" exact component={Master}/>
                 <Route path="/activePage" exact  component={Dataindex} />
                 <Route path="/Form" exact component={Form}/>
+                <Route path="/data" exact component={Data}/>
             </div>
           </div>
         </div>
